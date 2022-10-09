@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Cairo', sans-serif; */
+font-family: 'Cinzel Decorative', cursive;
+}
+body{
+    background: url(./Untitled-1.png);
+       background-size: cover;
+       background-repeat: no-repeat;
+       height: 100vh;
+   }/* NavBar */
+nav{
+    padding: 20px;
+    /* opacity: 0.8; */
+background-color: rgb(38, 42, 78);
+margin-right: 200px;
+border-radius:0 0px 80px 0 ;
+}
+
+nav ul{
+display: flex;
+margin-left: 30px;
+margin-top: 2px;
+margin-bottom: 2px;
+justify-content: space-around;
+}
+nav ul li{
+list-style: none;
+margin-left: 30px;
+padding: 10px;
+
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+text-decoration: none;
+opacity: 1;
+padding: 20px;
+margin-bottom: 10px;
+transition: 0.2s all ease-in-out;
+font-size: larger;
+}
+nav ul li a:hover{
+    color: black;
+    background-color: gold;
+    transition: 0.2s all ease-in-out;
+    box-shadow: 2px 2px 50px gold;
+}
+.active{
+    background-color: rgb(1, 6, 127);
+}
+.active:hover{
+    background-color: rgb(1, 6, 127);
+    color: white;
+    box-shadow: 2px 2px 50px  rgb(1, 6, 127);
+
+
+}
+/* section 1 */
+
+
+.section1{
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(42, 45, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    flex-direction: column;
+    border-radius: 30px;
+    outline: 1px dashed gold;
+outline-offset: -15px;
+}
+.section1 img{
+width: 300px;
+border-radius: 50%;
+outline: 3px dashed gold;
+outline-offset: 3px;
+transition: all 0.5s ease-in-out;
+
+}
+.section1 img:hover{
+transition: all 0.5s ease-in-out;
+transform: translateY(-80px); 
+
+}
+
+.section1 .text{
+
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+.section1 .text h1{
+margin-bottom: 20px;
+text-transform: capitalize;
+
+}
+.section1 .text h1 span{
+color: gold;
+}
+.section1 .text p{
+font-style: italic;
+text-transform: lowercase;
+
+margin-top: 30px;
+}
+.section1 .text p span{
+    color: gold;
+
+}
+.section1 .text p a{
+color: white;
+font-style: normal;
+text-decoration: none;
+font-family: 'Cairo', sans-serif;
+font-size: x-large;
+text-transform: capitalize;
+}
+.section1 .text p a span{
+    color: gold;
+    transition: all 0.5s ease-in-out;
+    margin-left: 20px;
+    font-family: 'Cairo', sans-serif;
+font-size: x-large;
+text-transform: none;
+
+}
+.section1 .text p a span:hover{
+    color: #007bff;
+    text-decoration:underline;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 2px;
+
+    
+}
+.section2{
+    background-color: rgb(185, 180, 180);
+    width: 190px;
+    height: 50px;
+    position: absolute;
+    bottom:15px;
+    left: 10px;
+    display: flex;
+    /* border-radius: 20px; */
+    animation: transplatte 1s infinite ease-in-out;
+}
+.section2 .box1{
+    border-radius: 20px;
+
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: brown;
+}.section2 .box2{
+    cursor: pointer;
+    border-radius: 20px;
+    
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: darkblue;
+}.section2 .box3{
+    cursor: pointer;
+    border-radius: 20px;
+
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: green;
+}
+.section2 img{
+    cursor: pointer;
+    border-radius: 20px;
+
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: chocolate;
+}
+@keyframes transplatte {
+    0%{
+            /* transition: all 0.2s ease-in-out; */
+            border-radius: 20px;
+
+        }
+    50%{
+        /* transform: translateY(0px); */
+        /* transition: all 0.2s ease-in-out; */
+        border-radius: 5px;
+
+        
+    }
+ 
+    100%{
+        /* transition: all 0.2s ease-in-out; */
+        /* transform: translateX(10px); */
+border-radius: 20px;
+       
+    }
+}

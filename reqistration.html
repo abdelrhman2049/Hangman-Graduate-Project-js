@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reqistration.css">
+    <title>Document</title>
+    <script src="./js/reqistration.js" defer></script>
+</head>
+<body onload="myMove()">
+    <!-- NavBar -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallary.html">Gallery</a></li>
+            <li><a class="active" href="./reqistration.html">Reqistration</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+            <li><a href="./play.html">Play</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <!-- Section2 -->
+
+<section class="section1">
+    <form action="get" onsubmit="required()">
+        <input type="text" name="username" id="username" placeholder="Please Enter User Name" minlength="5" maxlength="8" required>
+        <input type="text" onkeyup="lettersonly(this)"  name="firstname" id="firstname" placeholder="Please Enter YOur First Name"required >
+        <input type="text" onkeyup="lettersonly(this)"  name="secondname" id="secondname" placeholder="Please Enter YOur Second Name" required>
+        <input type="email" placeholder="Please Enter Your Email" name="email" id="email" required>
+        <input type="password" placeholder="Please Enter Your Password Min 7 Character" minlength="7" name="password" id="password" required>
+        <input type="tel" name="phone" equired pattern="[0-1]{2}[0-9]{9}" maxlength="11" id="" placeholder="Please Enter Your Phone" required>
+        <div class="radio">
+        <label for="department">HTML</label>
+        <input type="radio" name="department" id="department">
+        <label for="department2">CSS</label>
+        <input type="radio" name="department2" id="department2">
+    </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</section>
+
+
+</body>
+</html>

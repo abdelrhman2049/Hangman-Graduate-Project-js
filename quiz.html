@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Cinzel+Decorative:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <script src="./js/quiz.js" defer></script>
+</head>
+<body id="body">
+    <nav>
+        <ul>
+            <li><a  href="./index.html">Home</a></li>
+            <li><a href="./gallary.html">Gallery</a></li>
+            <li><a href="./reqistration.html">Reqistration</a></li>
+            <li><a class="active" href="./quiz.html">Quiz</a></li>
+            <li><a href="./play.html">Play</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+<div class="allquiz" id="allquiz">
+
+    <div id="quiz">
+        <div class="quiz1">
+            <label for="Q1">br is bro</label>
+            <label for="wron1">True</label>
+            <input class="radio"  type="radio" name="Q1" id="wron1" />
+            <label for="answer1">False</label>
+            <input class="radio"  type="radio" name="Q1" id="answer1" />
+        </div>
+        
+        <div class="quiz2">
+            <label for="Q2">ul is unorder list</label>
+            <label for="answer2">True</label>
+            <input class="radio"  type="radio" name="Q2" id="answer2"/>
+            <label for="wron2">False</label>
+            <input  class="radio" id="wron2"  type="radio" name="Q2" />
+        </div>
+        
+        <div class="quiz3">
+            <label for="Q3">ol is orderlist</label>
+            <label for="answer3">True</label>
+            <input class="radio" type="radio" name="Q3" id="answer3"/>
+            <label for="wron3">False</label>
+            <input class="radio" id="wron3" type="radio" name="Q3"/>
+        </div>
+        
+        <div class="quiz4">
+            <label for="Q4">p is main a paragraph</label>
+            <label for="answer4">True</label>
+        <input class="radio"  type="radio" name="Q4" id="answer4"/>
+        <label for="wron4">False</label>
+        <input class="radio" id="wron4" type="radio" name="Q4" />
+    </div>
+    <button type="submit"  value="submit" onclick="exam()">Submit</button>
+</div>
+</div>
+</body>
+</html>

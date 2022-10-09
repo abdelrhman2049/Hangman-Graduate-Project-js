@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="./js/home.js" defer></script>
+    <title>Home</title>
+</head>
+<body onload="myMove()">
+    <!-- NavBar -->
+    <nav>
+        <ul>
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="./gallary.html">Gallery</a></li>
+            <li><a href="./reqistration.html">Reqistration</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+            <li><a href="./play.html">Play</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <!-- Section 1 -->
+    <section class="section1">
+        <div id="go">
+            <button > Let's Go</button>
+            <img src="./css/Untitled-2.png" alt="">
+        </div>
+        <h1 id="welcome"></h1>
+        <h3 id="clock"></h3>
+    </section>
+    <!-- Section 2 -->
+    <section class="section2">
+        <div onclick="changecolor1()" class="box1"></div>
+        <div onclick="changecolor2()" class="box2"></div>
+        <div onclick="changecolor3()" class="box3"></div>
+        <img onclick="changecolor4()" src="/img/Color_circle_(RGB).svg" width="40" alt="">
+    </section>
+</body>
+</html>
